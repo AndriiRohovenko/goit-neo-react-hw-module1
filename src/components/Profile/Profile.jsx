@@ -1,7 +1,6 @@
 import styles from './Profile.module.css';
 
 function Profile({ name, tag, location, image, stats }) {
-  console.log('hello from Profile component');
   return (
     <>
       <div className={styles.profileCard}>

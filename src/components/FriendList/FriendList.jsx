@@ -2,7 +2,6 @@ import styles from './FriendList.module.css';
 import FriendListItem from './FriendListItem/FriendListItem';
 
 export default function FriendList({ friends }) {
-  console.log(styles);
   return (
     <>
       <ul className={styles.FriendList}>

@@ -7,7 +7,6 @@ import FriendList from '../FriendList/FriendList';
 import friendsListData from '../../mockedData/task2.json';
 
 function App() {
-  console.log('hello from App component');
   return (
     <>
       <Profile
