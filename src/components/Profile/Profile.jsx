@@ -6,21 +6,27 @@ function Profile({ name, tag, location, image, stats }) {
     <>
       <div className={styles.profileCard}>
         <img className={styles.profileImg} src={image} alt="default alt" />
-        <p className="card-title">{name}</p>
-        <p>{tag}</p>
+        <p className={styles.cardTitle}>{name}</p>
+        <p className={styles.profileTag}>@{tag}</p>
         <p className={styles.UserLocation}>{location}</p>
         <ul className={styles.UserStats}>
           <li className={styles.stat}>
             <span>Followers</span>
-            <span>{stats.followers}</span>
+            <strong>
+              <span>{stats.followers}</span>
+            </strong>
           </li>
           <li className={styles.stat}>
             <span>Views</span>
-            <span>{stats.views}</span>
+            <strong>
+              <span>{stats.views}</span>
+            </strong>
           </li>
           <li className={styles.stat}>
             <span>Likes</span>
-            <span>{stats.likes}</span>
+            <strong>
+              <span>{stats.likes}</span>
+            </strong>
           </li>
         </ul>
       </div>
