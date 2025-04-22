@@ -3,6 +3,9 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './components/App/App.jsx';
 
+// Імпорт стилів нормалізації
+import 'modern-normalize';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
